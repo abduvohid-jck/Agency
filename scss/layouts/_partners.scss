@@ -1,0 +1,37 @@
+.partners {
+  background-color: #fdf0e9;
+  &__wrapper {
+    display: flex;
+    gap: 146px;
+    align-items: center;
+    padding-top: 76px;
+    padding-bottom: 72px;
+    border-bottom: 1px solid #f3d1bf;
+  }
+  &__D-V {
+    display: flex;
+    align-items: center;
+    gap: 146px;
+  }
+  &__T-F {
+    display: flex;
+    align-items: center;
+    gap: 146px;
+  }
+}
+
+@include mobile() {
+  .partners {
+    &__wrapper {
+      flex-direction: column;
+      gap: 24px;
+      padding-bottom: 50px;
+    }
+    &__T-F {
+      gap: 66px;
+    }
+    &__D-V {
+      gap: 41px;
+    }
+  }
+}

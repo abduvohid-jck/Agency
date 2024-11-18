@@ -1,0 +1,80 @@
+.second-features {
+  background-color: #fdf0e9;
+  padding-bottom: 213px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #ef6d58;
+  }
+  &__description {
+    font-family: Epilogue;
+    font-size: 20px;
+    line-height: 32px;
+    color: #391400;
+    margin-top: 30px;
+    margin-bottom: 28px;
+  }
+  &__link {
+    font-family: Epilogue;
+    color: #391400;
+  }
+  &__right-part {
+    display: flex;
+    align-items: end;
+  }
+  &__card-title {
+    font-family: Epilogue;
+    font-size: 24px;
+    color: #391400;
+  }
+  &__card-description {
+    font-family: Epilogue;
+    margin-top: 19px;
+    line-height: 32px;
+    color: #391400a3;
+  }
+  &__card-2 {
+    padding: 105px 48px 46px 48px;
+    border: 1px solid #f3d1bf;
+    border-radius: 0 6px 6px 0;
+  }
+  &__card-1 {
+    padding: 48px 48px 46px 48px;
+    border: 1px solid #f3d1bf;
+    border-radius: 6px 0 0 6px;
+    background-color: white;
+  }
+  &__card-title-1 {
+    font-family: Epilogue;
+    font-size: 24px;
+    color: #391400;
+    margin-top: 41px;
+  }
+}
+@include mobile() {
+  .second-features {
+    padding-bottom: 112px;
+    &__wrapper {
+      flex-direction: column;
+      gap: 36px;
+    }
+    &__right-part {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__card-2 {
+      padding: 105px 54px 46px 54px;
+      border-radius: 0 0px 6px 6px;
+    }
+    &__card-1 {
+      border-radius: 6px 6px 0 0;
+    }
+  }
+}

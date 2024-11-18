@@ -1,0 +1,44 @@
+.header {
+  background-color: #28293e;
+  padding-top: 16px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__links {
+    display: flex;
+    gap: 100px;
+  }
+  &__link {
+    color: white;
+    font-family: Epilogue;
+  }
+  &__button {
+    font-family: Epilogue;
+    font-size: 14px;
+    font-weight: 900;
+    color: white;
+    padding: 18px 35.54px 16px 34.46px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    border-radius: 6px;
+  }
+  &__hamburger-menu {
+    display: none;
+  }
+}
+
+@include mobile() {
+  .header {
+    &__links {
+      display: none;
+    }
+    &__button {
+      display: none;
+    }
+    &__hamburger-menu {
+      display: block;
+    }
+  }
+}
