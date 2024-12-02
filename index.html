@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agency Creative</title>
+    <title>Morent</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -14,34 +14,51 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- Header section -->
     <header class="header">
-      <div class="container">
+      <div class="header-container">
         <div class="header__wrapper">
-          <div>
-            <a href="#"
-              ><img
-                class="header__logo"
-                src="./assets/images/logo.svg"
-                alt="Logo"
-            /></a>
+          <div class="header__left-side">
+            <img src="./assets/icons/logo.svg" alt="Logo" />
+            <div class="header__search-input">
+              <div class="input-and-magnifying-glass">
+                <img
+                  src="./assets/icons/magnifying-glass.svg"
+                  alt="Magnifying glass"
+                />
+                <input type="text" placeholder="Search something here" />
+              </div>
+              <img src="./assets/icons/filter.svg" alt="Filter" />
+            </div>
           </div>
-          <div>
-            <ul class="header__links">
-              <a href="#"><li class="header__link">About</li></a>
-              <a href="#"><li class="header__link">Services</li></a>
-              <a href="#"><li class="header__link">Pricing</li></a>
-              <a href="#"><li class="header__link">Blog</li></a>
-            </ul>
-          </div>
-          <div>
-            <a href="#"><button class="header__button">CONTACT</button></a>
-          </div>
-          <div class="header__hamburger-menu">
+          <div class="header__right-side">
+            <img class="like-icon" src="./assets/icons/like.svg" alt="Like" />
             <img
-              src="./assets/icons/hamburger-menu.svg"
-              alt="Hamburger menu icon"
+              class="notification-icon"
+              src="./assets/icons/notification.svg"
+              alt="Notification"
             />
+            <img
+              class="settings-icon"
+              src="./assets/icons/settings.svg"
+              alt="Settings"
+            />
+            <img src="./assets/icons/profile.svg" alt="Profile" />
+          </div>
+        </div>
+        <div class="mobile-input-bar">
+          <div class="mobile-input">
+            <img
+              src="./assets/icons/magnifying-glass.svg"
+              alt="Magnifying glass"
+            />
+            <input
+              class="input-mobile"
+              type="text"
+              placeholder="Search something here"
+            />
+          </div>
+          <div class="mobile-filter">
+            <img src="./assets/icons/filter.svg" alt="Filter" />
           </div>
         </div>
       </div>
@@ -49,364 +66,889 @@
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <div class="container">
+        <div class="container-body">
           <div class="hero__wrapper">
-            <div>
-              <p class="hero__sub-title">MODERN STUDIO</p>
-              <h1 class="hero__title">
-                We’re Help <br />
-                To Build <br class="br-for-responsive" />
-                Your <br class="br-for-desktop" />
-                Dream <br class="br-for-responsive" />
-                Project
-              </h1>
-              <p class="hero__description">
-                Agency provides a full service range
-                <br class="br-for-responsive" />
-                including technical <br class="br-for-desktop" />
-                skills, design,<br class="br-for-responsive" />
-                business understanding.
+            <div class="hero__first-card">
+              <div>
+                <h2 class="hero__first-card-title">
+                  The Best Platform <br br class="hero__br-hidden" />
+                  for Car Rental
+                </h2>
+                <p class="hero__card-description">
+                  Ease of doing a car rental safely and <br />
+                  reliably. Of course at a low price.
+                </p>
+                <button class="hero__card-btn">Rental Car</button>
+              </div>
+              <img
+                class="hero__first-card-image"
+                src="./assets/images/koenigsegg.svg"
+                alt="Koenigseg"
+              />
+            </div>
+            <div class="hero__second-card">
+              <h2 class="hero__second-card-title">
+                Easy way to rent a <br />
+                car at a low price
+              </h2>
+              <p class="hero__second-card-description">
+                Providing cheap car rental services <br />
+                and safe and comfortable facilities.
               </p>
-              <div class="hero__buttons">
-                <a href="#"
-                  ><button class="hero__button">HOW WE WORK</button></a
+              <button class="hero__second-card-button">Rental Car</button>
+              <img
+                class="hero__second-card-image"
+                src="./assets/images/nissan.svg"
+                alt="Nissan"
+              />
+            </div>
+          </div>
+          <div class="hero__filters">
+            <div class="hero__pick-up-filter">
+              <div class="hero__pick-up-filter-header">
+                <img src="./assets/icons/filters-point.svg" alt="" />
+                <p class="hero__pick-up-filter-title">Pick - Up</p>
+              </div>
+              <div class="hero__pick-up-filter-sections">
+                <div
+                  class="hero__pick-up-filter-section hero__filter-with-border"
                 >
-                <a href="#"><span class="hero__link">Contact Us</span></a>
+                  <p class="hero__filter-title">Locations</p>
+                  <div class="hero__pick-up-filter-input">
+                    <div>
+                      <input
+                        class="hero__pick-up-filter-text-input"
+                        type="text"
+                        placeholder="Select your city"
+                      />
+                      <input
+                        class="hero__pick-up-filter-text-input-mobile"
+                        type="text"
+                        placeholder="Semarang"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="./assets/icons/bottom-pointer.svg"
+                        alt="Bottom pointer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hero__pick-up-filter-section hero__filter-with-border"
+                >
+                  <p class="hero__filter-title">Date</p>
+                  <div class="hero__pick-up-filter-input">
+                    <div>
+                      <input
+                        class="hero__pick-up-filter-text-input"
+                        type="text"
+                        placeholder="Select your date"
+                      />
+                      <input
+                        class="hero__pick-up-filter-text-input-mobile"
+                        type="text"
+                        placeholder="20 July 2022"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="./assets/icons/bottom-pointer.svg"
+                        alt="Bottom pointer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="hero__pick-up-filter-section">
+                  <p class="hero__filter-title">Time</p>
+                  <div class="hero__pick-up-filter-input">
+                    <div>
+                      <input
+                        class="hero__pick-up-filter-text-input"
+                        type="text"
+                        placeholder="Select your time"
+                      />
+                      <input
+                        class="hero__pick-up-filter-text-input-mobile"
+                        type="text"
+                        placeholder="07.00"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="./assets/icons/bottom-pointer.svg"
+                        alt="Bottom pointer"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="hero__customer">
-                <img src="./assets/images/user.svg" alt="User picture" />
+            </div>
+            <div>
+              <img
+                class="hero__filter-with-pointer"
+                src="./assets/icons/filter-with-pointers.svg"
+                alt="Filter with pointers"
+              />
+            </div>
+            <div class="hero__pick-up-filter">
+              <div class="hero__pick-up-filter-header">
+                <img src="./assets/icons/filters-point.svg" alt="" />
+                <p class="hero__pick-up-filter-title">Drop - Off</p>
+              </div>
+              <div class="hero__pick-up-filter-sections">
+                <div
+                  class="hero__pick-up-filter-section hero__filter-with-border"
+                >
+                  <p class="hero__filter-title">Locations</p>
+                  <div class="hero__pick-up-filter-input">
+                    <div>
+                      <input
+                        class="hero__pick-up-filter-text-input"
+                        type="text"
+                        placeholder="Select your city"
+                      />
+                      <input
+                        class="hero__pick-up-filter-text-input-mobile"
+                        type="text"
+                        placeholder="Semarang"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="./assets/icons/bottom-pointer.svg"
+                        alt="Bottom pointer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hero__pick-up-filter-section hero__filter-with-border"
+                >
+                  <p class="hero__filter-title">Date</p>
+                  <div class="hero__pick-up-filter-input">
+                    <div>
+                      <input
+                        class="hero__pick-up-filter-text-input"
+                        type="text"
+                        placeholder="Select your date"
+                      />
+                      <input
+                        class="hero__pick-up-filter-text-input-mobile"
+                        type="text"
+                        placeholder="21 July 2022"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="./assets/icons/bottom-pointer.svg"
+                        alt="Bottom pointer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="hero__pick-up-filter-section">
+                  <p class="hero__filter-title">Time</p>
+                  <div class="hero__pick-up-filter-input">
+                    <div>
+                      <input
+                        class="hero__pick-up-filter-text-input"
+                        type="text"
+                        placeholder="Select your time"
+                      />
+                      <input
+                        class="hero__pick-up-filter-text-input-mobile"
+                        type="text"
+                        placeholder="01.00"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="./assets/icons/bottom-pointer.svg"
+                        alt="Bottom pointer"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular-cars">
+        <div class="container-body">
+          <div class="popular-cars__header">
+            <p class="popular-cars__title">Popular Car</p>
+            <a href="#" class="popular-cars__view-all-link">View All</a>
+          </div>
+          <div class="popular-cars__wrapper">
+            <div class="popular-cars__card">
+              <div class="popular-cars__card-top">
                 <div>
-                  <p class="hero__opinion">
-                    "Put themselves in the<br class="br-for-responsive" />
-                    merchant's shoes"
-                  </p>
-                  <p class="hero__job">Meta Inc.</p>
+                  <p class="popular-cars__card-title">Koenigsegg</p>
+                  <p class="popular-cars__car-type">Sport</p>
                 </div>
-              </div>
-            </div>
-            <div>
-              <img
-                class="hero__image"
-                src="./assets/images/hero-image.svg"
-                alt="Hero imgae"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Partners section -->
-      <section class="partners">
-        <div class="container">
-          <div class="partners__wrapper">
-            <div class="partners__D-V">
-              <img src="./assets/images/digitalside.svg" alt="Digital slide" />
-              <img src="./assets/images/vortex.svg" alt="Vortex" />
-            </div>
-            <div class="partners__T-F">
-              <img
-                src="./assets/images/travel-explorer.svg"
-                alt="Travel explorer"
-              />
-              <img src="./assets/images/fuzion.svg" alt="Fuzion" />
-            </div>
-            <div>
-              <img src="./assets/images/mediafury.svg" alt="Mediafury" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About section  -->
-      <section class="about">
-        <div class="container">
-          <div class="about__wrapper">
-            <div>
-              <img
-                class="about__image"
-                src="./assets/images/about-image.svg"
-                alt="About image"
-              />
-            </div>
-            <div>
-              <p class="about__sub-title">ABOUT</p>
-              <h2 class="about__title">
-                An Experience <br />
-                Design Agency
-              </h2>
-              <p class="about__desc-title">Provides a full service range</p>
-              <p class="about__description">
-                Ability to put themselves in the
-                <br class="br-for-responsive" />
-                merchant's shoes. It is <br class="br-for-desktop" />
-                meant to partner <br class="br-for-responsive" />
-                on the long run, and work as an extension
-                <br />
-                of the merchant's team.
-              </p>
-              <button class="about__button">ABOUT US</button>
-            </div>
-          </div>
-          <div class="results">
-            <div class="results__card first-card">
-              <h3 class="results__numbers">42%</h3>
-              <p class="results__title">Years of experience</p>
-            </div>
-            <div class="results__card second-card">
-              <h3 class="results__numbers">73+</h3>
-              <p class="results__title">Agency members</p>
-            </div>
-            <div class="results__card third-card">
-              <h3 class="results__numbers">5.000</h3>
-              <p class="results__title">Projects complete</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- How we work section -->
-      <section class="how-we-work">
-        <div class="container">
-          <div class="how-we-work__wrapper">
-            <div>
-              <p class="about__sub-title">HOW WE WORK</p>
-              <h3 class="how-we-work__title">
-                Making Your <br class="br-for-responsive" />
-                Projects <br />
-                Look Awesome
-              </h3>
-              <p class="how-we-work__description">
-                Technical skills, design, business
-                <br class="br-for-responsive" />
-                understanding, ability to
-                <br class="br-for-desktop" />
-                put themselves
-                <br class="br-for-responsive" />
-                in the merchant's shoes.
-              </p>
-              <a class="how-we-work__link" href="#">Read More</a>
-            </div>
-            <div class="how-we-work__offers">
-              <p class="how-we-work__offer first-offer">
-                Full service range
-                <br class="br-for-responsive" />
-                <span class="offer-responsive-part-1">including</span>
-              </p>
-              <p class="how-we-work__offer second-offer">
-                Technical skills,
-                <br class="br-for-responsive" />
-                <span class="offer-responsive-part">design, business</span>
-              </p>
-              <p class="how-we-work__offer third-offer">
-                Themselves in the
-                <br class="br-for-responsive" />
-                <span class="offer-responsive-part">merchant's</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="video-reel">
-        <div class="container">
-          <div class="video-reel__wrapper">
-            <div>
-              <img
-                class="video-reel__image"
-                src="./assets/images/video-reel.png"
-                alt="video"
-              />
-            </div>
-            <div>
-              <h5 class="video-reel__sub-title">Video Reel</h5>
-              <h3 class="video-reel__title">
-                Unlock The <br class="br-for-responsive" />
-                Greatest
-                <br class="br-for-desktop" />
-                Value <br class="br-for-responsive" />
-                Possible
-              </h3>
-              <p class="video-reel__description">
-                Design, business understanding, ability to
-                <br class="br-for-responsive" />
-                put themselves <br class="br-for-desktop" />
-                in the merchant's shoes <br class="br-for-responsive" />
-                meant to partner.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Features section -->
-      <section class="features">
-        <div class="container">
-          <div class="features__wrapper">
-            <div>
-              <h5 class="features__sub-title">FEATURES</h5>
-              <h2 class="features__title">
-                Give Your Site <br />
-                A New Look
-              </h2>
-              <p class="features__description">
-                Service range including technical
-                <br class="br-for-responsive" />
-                skills, design, <br class="br-for-desktop" />
-                business <br class="br-for-responsive" />
-                understanding.
-              </p>
-              <div class="features__advantages">
-                <div class="features__advantage">
-                  <img src="./assets/icons/checkmark.svg" alt="Checkmark" />
-                  <span>Range including technical skills</span>
-                </div>
-                <div class="features__advantage">
-                  <img src="./assets/icons/checkmark.svg" alt="Checkmark" />
-                  <span>Business understanding</span>
-                </div>
-                <div class="features__advantage">
-                  <img src="./assets/icons/checkmark.svg" alt="Checkmark" />
-                  <span>Partner on the long run</span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img
-                class="features__image"
-                src="./assets/images/features.svg"
-                alt="Features"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Second Features section  -->
-      <section class="second-features">
-        <div class="container">
-          <div class="second-features__wrapper">
-            <div>
-              <h5 class="second-features__title">FEATURES</h5>
-              <p class="second-features__description">
-                Long run, and work as an
-                <br class="br-for-responsive" />
-                extension
-                <br class="br-for-desktop" />
-                of the merchant's
-                <br class="br-for-responsive" />
-                team.
-              </p>
-              <a class="second-features__link" href="#">Read More</a>
-            </div>
-            <div class="second-features__right-part">
-              <div class="second-features__card-1">
-                <img
-                  class="second-features__image"
-                  src="./assets/images/second-features.png"
-                  alt="Second features section image"
-                />
-                <h4 class="second-features__card-title-1">Professional</h4>
-                <p class="second-features__card-description">
-                  Full service range including
-                  <br />
-                  technical skills, design.
-                </p>
-              </div>
-              <div class="second-features__card-2">
-                <h4 class="second-features__card-title">Accessibility</h4>
-                <p class="second-features__card-description">
-                  Business understanding,<br />
-                  ability to put themselves.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Service section -->
-      <section class="service">
-        <div class="container">
-          <div class="service__wrapper">
-            <div>
-              <img
-                class="service__image"
-                src="./assets/images/service-image.svg"
-                alt="Service section image"
-              />
-            </div>
-            <div>
-              <h5 class="service__sub-title">SERVICE</h5>
-              <h2 class="service__title">
-                Making Complex
-                <br />
-                Digital Products
-              </h2>
-              <p class="service__description">
-                Agency provides a full service
-                <br class="br-for-responsive" />
-                range including
-                <br class="br-for-desktop" />
-                technical skills,
-                <br class="br-for-responsive" />
-                design, business.
-              </p>
-              <div class="service__client">
-                <img
-                  src="./assets/images/client-image.svg"
-                  alt="Client image"
-                />
                 <div>
-                  <p class="service__client-opinion">
-                    "Understanding, ability to put
-                    <br class="br-for-responsive" />
-                    themselves in the
-                    <br class="br-for-desktop" />
-                    merchant's <br class="br-for-responsive" />
-                    shoes. It is meant to partner."
-                  </p>
-                  <p class="service__client-name">Jenny Murtaugh</p>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
                 </div>
               </div>
-              <button class="service__button">EXPLORE</button>
+              <div class="popular-cars__car-image">
+                <img
+                  src="./assets/images/koenigsegg-card.svg"
+                  alt="Koenigsegg"
+                />
+                <div class="popular-cars__card-car-gradient"></div>
+              </div>
+              <div class="popular-cars__informations">
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/gas-station.svg"
+                    alt="Gas station"
+                  />
+                  <p>90L</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/steering-wheel.svg"
+                    alt="Steering wheel"
+                  />
+                  <p>Manual</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img src="./assets/images/peoples.svg" alt="Peoples" />
+                  <p>2 People</p>
+                </div>
+              </div>
+              <div class="popular-cars__payment">
+                <div>
+                  <p class="popular-cars__car-price">
+                    $99.00/
+                    <span class="popular-cars__car-price-span">day</span>
+                  </p>
+                </div>
+                <div>
+                  <button class="popular-cars__rent-button">Rent Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-cars__card popular-cars__mobile-hidden-cars">
+              <div class="popular-cars__card-top">
+                <div>
+                  <p class="popular-cars__card-title">Nissan GT - R</p>
+                  <p class="popular-cars__car-type">Sport</p>
+                </div>
+                <div>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
+                </div>
+              </div>
+              <div class="popular-cars__car-image">
+                <img src="./assets/images/nissan-card.svg" alt="Koenigsegg" />
+                <div class="popular-cars__card-car-gradient"></div>
+              </div>
+              <div class="popular-cars__informations">
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/gas-station.svg"
+                    alt="Gas station"
+                  />
+                  <p>80L</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/steering-wheel.svg"
+                    alt="Steering wheel"
+                  />
+                  <p>Manual</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img src="./assets/images/peoples.svg" alt="Peoples" />
+                  <p>2 People</p>
+                </div>
+              </div>
+              <div class="popular-cars__payment">
+                <div>
+                  <p class="popular-cars__car-price">
+                    $80.00/
+                    <span class="popular-cars__car-price-span">day</span>
+                  </p>
+                  <p class="popular-cars__discount">$100.00</p>
+                </div>
+                <div>
+                  <button class="popular-cars__rent-button">Rent Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-cars__card popular-cars__mobile-hidden-cars">
+              <div class="popular-cars__card-top">
+                <div>
+                  <p class="popular-cars__card-title">Rolls - Royce</p>
+                  <p class="popular-cars__car-type">Sedan</p>
+                </div>
+                <div>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
+                </div>
+              </div>
+              <div class="popular-cars__car-image">
+                <img
+                  src="./assets/images/rolls-royce.svg"
+                  alt="Rolls - Royce"
+                />
+                <div class="popular-cars__card-car-gradient"></div>
+              </div>
+              <div class="popular-cars__informations">
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/gas-station.svg"
+                    alt="Gas station"
+                  />
+                  <p>70L</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/steering-wheel.svg"
+                    alt="Steering wheel"
+                  />
+                  <p>Manual</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img src="./assets/images/peoples.svg" alt="Peoples" />
+                  <p>4 People</p>
+                </div>
+              </div>
+              <div class="popular-cars__payment">
+                <p class="popular-cars__car-price">
+                  $96.00/ <span class="popular-cars__car-price-span">day</span>
+                </p>
+                <button class="popular-cars__rent-button">Rent Now</button>
+              </div>
+            </div>
+
+            <div class="popular-cars__card popular-cars__mobile-hidden-cars">
+              <div class="popular-cars__card-top">
+                <div>
+                  <p class="popular-cars__card-title">Nissan GT - R</p>
+                  <p class="popular-cars__car-type">Sport</p>
+                </div>
+                <div>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
+                </div>
+              </div>
+              <div class="popular-cars__car-image">
+                <img src="./assets/images/nissan-card.svg" alt="Koenigsegg" />
+                <div class="popular-cars__card-car-gradient"></div>
+              </div>
+              <div class="popular-cars__informations">
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/gas-station.svg"
+                    alt="Gas station"
+                  />
+                  <p>80L</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/steering-wheel.svg"
+                    alt="Steering wheel"
+                  />
+                  <p>Manual</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img src="./assets/images/peoples.svg" alt="Peoples" />
+                  <p>2 People</p>
+                </div>
+              </div>
+              <div class="popular-cars__payment">
+                <div>
+                  <p class="popular-cars__car-price">
+                    $80.00/
+                    <span class="popular-cars__car-price-span">day</span>
+                  </p>
+                  <p class="popular-cars__discount">$100.00</p>
+                </div>
+                <div>
+                  <button class="popular-cars__rent-button">Rent Now</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Second service section -->
-      <section class="second-service">
-        <div class="container">
-          <h5 class="second-service__sub-title">Service</h5>
-          <h3 class="second-service__title">
-            How Our Agency <br />
-            Can Help
-          </h3>
-          <div class="second-service__wrapper">
-            <div class="second-service__card service-card1">
-              <img src="./assets/images/second-service1.png" alt="Card image" />
-              <h4 class="second-service__card-title">Design</h4>
-              <p class="second-service__card-description">
-                Agency provides a full service <br class="br-for-responsive" />
-                range <br class="br-for-desktop" />
-                including technical skills,<br class="br-for-responsive" />
-                design.
-              </p>
-              <a class="second-service__card-link" href="#">Learn More</a>
+      <!-- Recomendation section -->
+      <section class="recomendation">
+        <div class="container-body">
+          <div class="recomendation__title">
+            <p>Recomendation Car</p>
+          </div>
+          <div class="recomendation__wrapper">
+            <div class="popular-cars__card recomendation__card">
+              <div class="popular-cars__card-top">
+                <div>
+                  <p class="popular-cars__card-title">All New Rush</p>
+                  <p class="popular-cars__car-type">SUV</p>
+                </div>
+                <div>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
+                </div>
+              </div>
+              <div class="recomendation__mobile-card-design">
+                <div class="popular-cars__car-image">
+                  <img src="./assets/images/rush.svg" alt="All New Rush" />
+                  <div class="popular-cars__card-car-gradient"></div>
+                </div>
+                <div
+                  class="popular-cars__informations recomendation__mobile-informations"
+                >
+                  <div class="popular-cars__car-info">
+                    <img
+                      src="./assets/images/gas-station.svg"
+                      alt="Gas station"
+                    />
+                    <p>70L</p>
+                  </div>
+                  <div class="popular-cars__car-info">
+                    <img
+                      src="./assets/images/steering-wheel.svg"
+                      alt="Steering wheel"
+                    />
+                    <p>Manual</p>
+                  </div>
+                  <div class="popular-cars__car-info">
+                    <img src="./assets/images/peoples.svg" alt="Peoples" />
+                    <p>6 People</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-cars__payment">
+                <div>
+                  <p class="popular-cars__car-price">
+                    $72.00/
+                    <span class="popular-cars__car-price-span">day</span>
+                  </p>
+                  <p class="popular-cars__discount">$80.00</p>
+                </div>
+                <div>
+                  <button class="popular-cars__rent-button">Rent Now</button>
+                </div>
+              </div>
             </div>
-            <div class="second-service__card service-card2">
-              <img src="./assets/images/second-service2.png" alt="Card image" />
-              <h4 class="second-service__card-title">Development</h4>
-              <p class="second-service__card-description">
-                Full service range including technical <br />
-                skills, design, business.
-              </p>
-              <a class="second-service__card-link" href="#">Discover More</a>
+
+            <div class="popular-cars__card recomendation__card">
+              <div class="popular-cars__card-top">
+                <div>
+                  <p class="popular-cars__card-title">CR - V</p>
+                  <p class="popular-cars__car-type">SUV</p>
+                </div>
+                <div>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
+                </div>
+              </div>
+              <div class="recomendation__mobile-card-design">
+                <div class="popular-cars__car-image">
+                  <img src="./assets/images/cr-brown.svg" alt="CR - V" />
+                  <div class="popular-cars__card-car-gradient"></div>
+                </div>
+                <div
+                  class="popular-cars__informations recomendation__mobile-informations"
+                >
+                  <div class="popular-cars__car-info">
+                    <img
+                      src="./assets/images/gas-station.svg"
+                      alt="Gas station"
+                    />
+                    <p>80L</p>
+                  </div>
+                  <div class="popular-cars__car-info">
+                    <img
+                      src="./assets/images/steering-wheel.svg"
+                      alt="Steering wheel"
+                    />
+                    <p>Manual</p>
+                  </div>
+                  <div class="popular-cars__car-info">
+                    <img src="./assets/images/peoples.svg" alt="Peoples" />
+                    <p>6 People</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-cars__payment">
+                <div>
+                  <p class="popular-cars__car-price">
+                    $80.00/
+                    <span class="popular-cars__car-price-span">day</span>
+                  </p>
+                </div>
+                <div>
+                  <button class="popular-cars__rent-button">Rent Now</button>
+                </div>
+              </div>
             </div>
-            <div class="second-service__card service-card3">
-              <img src="./assets/images/second-service3.png" alt="Card image" />
-              <h4 class="second-service__card-title">Marketing</h4>
-              <p class="second-service__card-description">
-                Technical skills, design, business <br />
-                understanding, ability.
-              </p>
-              <a class="second-service__card-link" href="#">Explore Now</a>
+
+            <div class="popular-cars__card recomendation__card">
+              <div class="popular-cars__card-top">
+                <div>
+                  <p class="popular-cars__card-title">All New Terios</p>
+                  <p class="popular-cars__car-type">SUV</p>
+                </div>
+                <div>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
+                </div>
+              </div>
+              <div class="recomendation__mobile-card-design">
+                <div class="popular-cars__car-image">
+                  <img src="./assets/images/terios.svg" alt="All New Terios" />
+                  <div class="popular-cars__card-car-gradient"></div>
+                </div>
+                <div
+                  class="popular-cars__informations recomendation__mobile-informations"
+                >
+                  <div class="popular-cars__car-info">
+                    <img
+                      src="./assets/images/gas-station.svg"
+                      alt="Gas station"
+                    />
+                    <p>90L</p>
+                  </div>
+                  <div class="popular-cars__car-info">
+                    <img
+                      src="./assets/images/steering-wheel.svg"
+                      alt="Steering wheel"
+                    />
+                    <p>Manual</p>
+                  </div>
+                  <div class="popular-cars__car-info">
+                    <img src="./assets/images/peoples.svg" alt="Peoples" />
+                    <p>6 People</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-cars__payment">
+                <div>
+                  <p class="popular-cars__car-price">
+                    $74.00/
+                    <span class="popular-cars__car-price-span">day</span>
+                  </p>
+                </div>
+                <div>
+                  <button class="popular-cars__rent-button">Rent Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-cars__card recomendation__card">
+              <div class="popular-cars__card-top">
+                <div>
+                  <p class="popular-cars__card-title">CR - V</p>
+                  <p class="popular-cars__car-type">SUV</p>
+                </div>
+                <div>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
+                </div>
+              </div>
+              <div class="recomendation__mobile-card-design">
+                <div class="popular-cars__car-image">
+                  <img src="./assets/images/cr-black.svg" alt="CR - V" />
+                  <div class="popular-cars__card-car-gradient"></div>
+                </div>
+                <div
+                  class="popular-cars__informations recomendation__mobile-informations"
+                >
+                  <div class="popular-cars__car-info">
+                    <img
+                      src="./assets/images/gas-station.svg"
+                      alt="Gas station"
+                    />
+                    <p>80L</p>
+                  </div>
+                  <div class="popular-cars__car-info">
+                    <img
+                      src="./assets/images/steering-wheel.svg"
+                      alt="Steering wheel"
+                    />
+                    <p>Manual</p>
+                  </div>
+                  <div class="popular-cars__car-info">
+                    <img src="./assets/images/peoples.svg" alt="Peoples" />
+                    <p>6 People</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-cars__payment">
+                <div>
+                  <p class="popular-cars__car-price">
+                    $80.00/
+                    <span class="popular-cars__car-price-span">day</span>
+                  </p>
+                </div>
+                <div>
+                  <button class="popular-cars__rent-button">Rent Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-cars__card recomendation__card">
+              <div class="popular-cars__card-top">
+                <div>
+                  <p class="popular-cars__card-title">MG ZX Exclusice</p>
+                  <p class="popular-cars__car-type">Hatchback</p>
+                </div>
+                <div>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
+                </div>
+              </div>
+              <div class="recomendation__mobile-card-design">
+                <div class="popular-cars__car-image">
+                  <img
+                    src="./assets/images/exclusice.svg"
+                    alt="MG ZX Exclusice"
+                  />
+                  <div class="popular-cars__card-car-gradient"></div>
+                </div>
+                <div
+                  class="popular-cars__informations recomendation__mobile-informations"
+                >
+                  <div class="popular-cars__car-info">
+                    <img
+                      src="./assets/images/gas-station.svg"
+                      alt="Gas station"
+                    />
+                    <p>70L</p>
+                  </div>
+                  <div class="popular-cars__car-info">
+                    <img
+                      src="./assets/images/steering-wheel.svg"
+                      alt="Steering wheel"
+                    />
+                    <p>Manual</p>
+                  </div>
+                  <div class="popular-cars__car-info">
+                    <img src="./assets/images/peoples.svg" alt="Peoples" />
+                    <p>4 People</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-cars__payment">
+                <div>
+                  <p class="popular-cars__car-price">
+                    $76.00/
+                    <span class="popular-cars__car-price-span">day</span>
+                  </p>
+                  <p class="popular-cars__discount">$80.00</p>
+                </div>
+                <div>
+                  <button class="popular-cars__rent-button">Rent Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-cars__card popular-cars__mobile-hidden-cars">
+              <div class="popular-cars__card-top">
+                <div>
+                  <p class="popular-cars__card-title">New MG ZS</p>
+                  <p class="popular-cars__car-type">SUV</p>
+                </div>
+                <div>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
+                </div>
+              </div>
+              <div class="popular-cars__car-image">
+                <img src="./assets/images/zs-white.svg" alt="New MG ZS" />
+                <div class="popular-cars__card-car-gradient"></div>
+              </div>
+              <div class="popular-cars__informations">
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/gas-station.svg"
+                    alt="Gas station"
+                  />
+                  <p>80L</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/steering-wheel.svg"
+                    alt="Steering wheel"
+                  />
+                  <p>Manual</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img src="./assets/images/peoples.svg" alt="Peoples" />
+                  <p>6 People</p>
+                </div>
+              </div>
+              <div class="popular-cars__payment">
+                <div>
+                  <p class="popular-cars__car-price">
+                    $80.00/
+                    <span class="popular-cars__car-price-span">day</span>
+                  </p>
+                </div>
+                <div>
+                  <button class="popular-cars__rent-button">Rent Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-cars__card popular-cars__mobile-hidden-cars">
+              <div class="popular-cars__card-top">
+                <div>
+                  <p class="popular-cars__card-title">MG ZX Excite</p>
+                  <p class="popular-cars__car-type">Hatchback</p>
+                </div>
+                <div>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
+                </div>
+              </div>
+              <div class="popular-cars__car-image">
+                <img src="./assets/images/exclusice.svg" alt="MG ZX Excite" />
+                <div class="popular-cars__card-car-gradient"></div>
+              </div>
+              <div class="popular-cars__informations">
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/gas-station.svg"
+                    alt="Gas station"
+                  />
+                  <p>90L</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/steering-wheel.svg"
+                    alt="Steering wheel"
+                  />
+                  <p>Manual</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img src="./assets/images/peoples.svg" alt="Peoples" />
+                  <p>4 People</p>
+                </div>
+              </div>
+              <div class="popular-cars__payment">
+                <div>
+                  <p class="popular-cars__car-price">
+                    $74.00/
+                    <span class="popular-cars__car-price-span">day</span>
+                  </p>
+                </div>
+                <div>
+                  <button class="popular-cars__rent-button">Rent Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-cars__card popular-cars__mobile-hidden-cars">
+              <div class="popular-cars__card-top">
+                <div>
+                  <p class="popular-cars__card-title">New MG ZS</p>
+                  <p class="popular-cars__car-type">SUV</p>
+                </div>
+                <div>
+                  <img src="./assets/icons/like-card.svg" alt="Like" />
+                </div>
+              </div>
+              <div class="popular-cars__car-image">
+                <img src="./assets/images/zs-gray.svg" alt="New MG ZS" />
+                <div class="popular-cars__card-car-gradient"></div>
+              </div>
+              <div class="popular-cars__informations">
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/gas-station.svg"
+                    alt="Gas station"
+                  />
+                  <p>80L</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img
+                    src="./assets/images/steering-wheel.svg"
+                    alt="Steering wheel"
+                  />
+                  <p>Manual</p>
+                </div>
+                <div class="popular-cars__car-info">
+                  <img src="./assets/images/peoples.svg" alt="Peoples" />
+                  <p>6 People</p>
+                </div>
+              </div>
+              <div class="popular-cars__payment">
+                <div>
+                  <p class="popular-cars__car-price">
+                    $80.00/
+                    <span class="popular-cars__car-price-span">day</span>
+                  </p>
+                </div>
+                <div>
+                  <button class="popular-cars__rent-button">Rent Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recomendation__footer">
+            <button class="recomendation__button">Show more car</button>
+            <div>
+              <p class="recomendation__cars-count">120 Car</p>
             </div>
           </div>
         </div>
       </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer__wrapper">
+            <div>
+              <img src="./assets/icons/logo.svg" alt="Logo" />
+              <p class="footer__description">
+                Our vision is to provide convenience
+                <br />
+                and help increase your sales business.
+              </p>
+            </div>
+            <div class="footer__links">
+              <ul>
+                <li class="thead">
+                  About
+                </li>
+                <li>How it works</li>
+                <li>Featured</li>
+                <li>Partnership</li>
+                <li>Bussiness Relation</li>
+              </ul>
+              <ul>
+                <li class="thead">
+                  Community
+                </li>
+                <li>Events</li>
+                <li>Blog</li>
+                <li>Podcast</li>
+                <li>Invite a friend</li>
+              </ul>
+              <ul>
+                <li class="thead">
+                  Socials
+                </li>
+                <li>Discord</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Facebook</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__last-line">
+            <div>
+              <p>©2022 MORENT. All rights reserved</p>
+            </div>
+            <div class="footer__terms">
+              <p>Privacy & Policy</p>
+              <p>Terms & Condition</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

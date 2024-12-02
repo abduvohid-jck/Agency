@@ -1,15 +1,9 @@
 @import "./base/reset";
 @import "./base/typography";
-@import "./variables/colors";
-@import "./mixins/mixins";
-@import "./layouts/container";
+@import "./layouts/containers";
 @import "./layouts/header-section";
 @import "./layouts/hero-section";
-@import "./layouts/partners";
-@import "./layouts/about";
-@import "./layouts/how-we-work";
-@import "./layouts/video-reel";
-@import "./layouts/features";
-@import "./layouts/second-features";
-@import "./layouts/service";
-@import "./layouts/second-service";
+@import "./layouts/popular-cars";
+@import "./layouts/recomendation-section";
+@import "./layouts/footer";
+

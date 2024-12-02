@@ -1,105 +1,234 @@
 .hero {
-  padding-top: 114px;
-  background-color: #28293e;
-  padding-bottom: 56px;
-  &__wrapper {
+  background: #f6f7f9;
+  min-width: 470px;
+
+  &__filters {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    position: relative;
+  }
+  &__pick-up-filter {
+    background-color: white;
+    padding: 24px 31px 24px 48px;
+    border-radius: 10px;
+  }
+  &__pick-up-filter-input {
+    width: 150px;
     align-items: center;
+    display: flex;
+    gap: 8px;
   }
-  &__sub-title {
-    font-family: Epilogue;
-    letter-spacing: 3px;
-    color: #ef6d58;
+  &__pick-up-filter-text-input{
+    width: 104px;
+      border: none;
+      outline: none;
+      font-family: plusjakarta;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
   }
-  &__title {
-    font-family: Epilogue;
-    font-size: 72px;
-    line-height: 80px;
-    letter-spacing: -2px;
-    color: white;
-    margin: 24px 0;
+  &__pick-up-filter-text-input-mobile{
+    width: 104px;
+    border: none;
+    outline: none;
+    font-family: plusjakarta;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    display: none;
   }
-  &__description {
-    font-family: Epilogue;
+  &__filter-with-pointer {
+    padding: 21px;
+    background: #3563e9;
+    border-radius: 10px;
+  }
+  &__filter-title {
+    font-family: plusjakarta;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    color: #ffffffa3;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
   }
-  &__button {
-    font-family: Epilogue;
-    font-size: 14px;
-    font-weight: 900;
-    padding: 18px 23.27px 16px 22.73px;
-    border-radius: 6px;
-    background-color: #ef6d58;
-    border: 1px solid #ef6d58;
-    margin-top: 34px;
-    margin-bottom: 108px;
-    color: white;
-  }
-  &__link {
-    font-family: Epilogue;
-    margin-left: 46px;
-    color: white;
-  }
-  &__customer {
+  &__pick-up-filter-header {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
   }
-  &__opinion {
-    font-family: Epilogue;
+  &__pick-up-filter-title {
+    font-family: plusjakarta;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  &__pick-up-filter-section {
+    width: 150px;
+    margin-top: 8px;
+  }
+  &__filter-with-border {
+    border-right: 1px solid #c3d4e966;
+    margin-right: 24px;
+  }
+  &__pick-up-filter-sections {
+    display: flex;
+    margin-top: 16px;
+  }
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px 0;
+  }
+  &__first-card-title {
+    font-family: plusjakarta;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.03em;
     color: white;
   }
-  &__job {
-    color: white;
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 5px;
+  &__first-card {
+    background: url(../../assets/images/hero-card-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 97px 10px 24px;
+    border-radius: 10px;
   }
-}
-.br-for-responsive {
-  display: none;
+  &__card-description {
+    font-family: plusjakarta;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: white;
+  }
+  &__card-btn {
+    padding: 10px 20px;
+    border: 1px solid #3563e9;
+    background-color: #3563e9;
+    border-radius: 4px;
+    font-family: plusjakarta;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: white;
+  }
+  &__first-card-image {
+    margin-left: 137px;
+  }
+  &__second-card {
+    background-image: url(../../assets/images/hero-card-2.png);
+    padding: 24px 113px 20px 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  &__second-card-title {
+    font-family: plusjakarta;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    color: white;
+  }
+  &__second-card-description {
+    font-family: plusjakarta;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  &__second-card-button {
+    font-family: plusjakarta;
+    padding: 10px 20px;
+    border: 1px solid #54a6ff;
+    background: #54a6ff;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+  }
+  &__second-card-image {
+    margin-left: 187px;
+  }
+  
 }
 
-@include mobile() {
+@media (max-width: 1440px) {
   .hero {
-    padding-top: 16px;
-    width: 100%; /* Moslashuvchanlikni saqlash */
-    &__wrapper {
-      flex-direction: column-reverse;
+    &__second-card {
+      display: none;
     }
-    &__image {
-      width: 100%;
+    &__br-hidden {
+      display: none;
     }
-    &__title {
-      margin-top: 20px;
-      margin-bottom: 12px;
+    &__first-card-image {
+      margin-left: 53px;
+      width: 196px;
+      height: 56px;
     }
-    &__buttons {
-      margin-top: 16px;
-      margin-bottom: 44px;
+    &__first-card-title {
+      font-family: plusjakarta;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+    }
+    &__card-description {
+      font-family: plusjakarta;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 19.2px;
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+    &__card-btn {
+      font-family: plusjakarta;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 15.12px;
+      letter-spacing: -0.02em;
+      padding: 14px 28px;
+      margin-bottom: 26px;
+    }
+    &__first-card {
+      padding: 16px 71px 4px 16px;
+      background-size: cover;
+      border-radius: 10px;
+    }
+    &__filters {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
+      gap: 14px;
     }
-    &__button {
-      margin-top: 0;
-      margin-bottom: 0;
+    &__pick-up-filter {
+      padding: 16px 21px 16px 16px;
     }
-    &__opinion {
-      color: #ffffffa3;
+    &__pick-up-filter-text-input{
+      display: none;
     }
-  }
-  .br-for-responsive {
-    display: block;
-  }
-  .br-for-desktop {
-    display: none;
+    &__pick-up-filter-text-input-mobile{
+      width: 60px;
+      display: block;
+    }
+    &__pick-up-filter-section {
+      width: 76px;
+    }
+    &__filter-with-border {
+      margin-right: 20px;
+      width: 96px;
+    }
+    &__filter-with-pointer {
+      position: absolute;
+      top: 107px;
+      left: 180px;
+    }
   }
 }
